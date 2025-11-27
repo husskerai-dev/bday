@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday Palakshi 🎂🌸</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #fffdf7;
+      --accent: #ff8fb1;
+      --accent-2: #ffd1e8;
+      --mint: #b6fff0;
+      --shadow: rgba(11,12,42,0.06);
+      --card: #ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:'Nunito',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{
+      background: linear-gradient(180deg,var(--bg) 0%, #fff2f6 100%);
+      display:flex;align-items:center;justify-content:center;padding:32px;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    .stage{
+      width:950px;max-width:98%;background:var(--card);border-radius:20px;padding:28px;box-shadow:0 12px 30px var(--shadow);position:relative;overflow:hidden;
+      border:1px solid rgba(200,180,200,0.15);
+    }
+    header{display:flex;gap:18px;align-items:center}
+    .hello{
+      width:130px;height:130px;border-radius:20px;background:linear-gradient(180deg,var(--accent-2),#fff);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 6px 18px rgba(255,140,177,0.18);transform:rotate(-6deg);
+    }
+    /* Cute stylized kitty (inlined SVG) */
+    .title{
+      flex:1
+    }
+    h1{margin:0;font-family:'Pacifico',cursive;font-size:42px;color:#ff5b92;line-height:1}
+    p.sub{margin:6px 0 0;color:#666;font-weight:600}
+
+    .center{
+      display:flex;gap:24px;margin-top:18px;align-items:flex-start
+    }
+    .card{
+      flex:1;background:linear-gradient(180deg,#ffffff,#fff6fb);border-radius:16px;padding:18px;box-shadow:0 8px 20px rgba(200,160,190,0.08);border:1px solid rgba(0,0,0,0.03);
+    }
+    .scene{height:300px;position:relative;display:flex;align-items:center;justify-content:center}
+
+    /* Floating balloons */
+    .balloon{position:absolute;bottom:20px;width:60px;height:90px;border-radius:40% 40% 45% 45%;display:flex;align-items:flex-end;justify-content:center;transform-origin:center bottom;}
+    .balloon:after{content:'';position:absolute;bottom:-18px;width:2px;height:34px;background:rgba(0,0,0,0.06)}
+    .b1{left:22%;background:linear-gradient(180deg,#ffd1e8,#ff8fb1);animation:float1 6s ease-in-out infinite}
+    .b2{left:12%;background:linear-gradient(180deg,#b6fff0,#c6ffe6);width:48px;height:76px;animation:float2 5.4s ease-in-out infinite}
+    .b3{right:18%;background:linear-gradient(180deg,#fff6b8,#ffd8a6);width:54px;height:82px;animation:float3 6.8s ease-in-out infinite}
+
+    @keyframes float1{0%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-28px) rotate(6deg)}100%{transform:translateY(0) rotate(-6deg)}}
+    @keyframes float2{0%{transform:translateY(0) rotate(0)}50%{transform:translateY(-34px) rotate(4deg)}100%{transform:translateY(0) rotate(0)}}
+    @keyframes float3{0%{transform:translateY(0) rotate(8deg)}50%{transform:translateY(-32px) rotate(-8deg)}100%{transform:translateY(0) rotate(8deg)}}
+
+    /* Cake */
+    .cake{width:220px;height:220px;display:flex;align-items:center;justify-content:center;position:relative}
+    .cake .plate{position:absolute;bottom:12px;width:280px;height:28px;border-radius:20px;background:linear-gradient(180deg,#fff,#f1e9ff);box-shadow:0 6px 14px rgba(10,10,30,0.06)}
+    .tier{width:180px;height:100px;border-radius:16px;background:linear-gradient(180deg,#fff0f6,#ffdff0);border:6px solid #fff;position:absolute;bottom:52px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(255,96,150,0.08)}
+    .frost{position:absolute;top:-18px;width:220px;height:34px;border-radius:18px;overflow:hidden}
+    .frost:before{content:'';display:block;width:100%;height:100%;background:linear-gradient(90deg,#fff,#fff9f0);transform:skewX(-6deg)}
+    .candle{width:10px;height:36px;background:#fff;position:absolute;top:-44px;border-radius:6px;display:flex;align-items:center;justify-content:center}
+    .flame{width:12px;height:18px;border-radius:50%;background:linear-gradient(180deg,#ffd86b,#ff955b);box-shadow:0 4px 10px rgba(255,153,85,0.25);transform-origin:center bottom;animation:flicker 0.22s infinite}
+    .c1{left:40px}.c2{left:88px}.c3{left:136px}
+    @keyframes flicker{0%{transform:scaleY(0.9)}50%{transform:scaleY(1.08)}100%{transform:scaleY(0.95)}}
+
+    /* Hearts */
+    .hearts{position:absolute;right:18px;top:20px;display:flex;flex-direction:column;gap:12px}
+    .heart{width:40px;height:40px}
+    .heart svg{display:block}
+    .floaty{position:absolute;left:12px;bottom:20px;width:140px}
+
+    /* Controls */
+    .controls{display:flex;gap:10px;align-items:center;margin-top:12px}
+    .btn{background:linear-gradient(180deg,var(--accent),#ff7aa6);color:white;padding:10px 14px;border-radius:12px;border:0;cursor:pointer;font-weight:700;box-shadow:0 8px 18px rgba(255,95,150,0.12)}
+    .btn.ghost{background:transparent;color:#ff5b92;border:1px solid rgba(255,90,140,0.12);box-shadow:none}
+
+    /* Confetti canvas full cover */
+    canvas.confetti{position:absolute;inset:0;pointer-events:none}
+
+    /* small footer note */
+    .foot{font-size:12px;color:#aaa;margin-top:10px}
+
+    /* responsive tweaks */
+    @media (max-width:700px){h1{font-size:32px}.hello{width:100px;height:100px} .cake{width:160px;height:160px}.center{flex-direction:column}.balloon{display:none}}
+  </style>
+</head>
+<body>
+  <div class="stage" role="main">
+    <canvas class="confetti" id="confetti"></canvas>
+    <header>
+      <div class="hello" aria-hidden="true">
+        <!-- Cute kawaii cat SVG inspired by classic designs -->
+        <svg width="100" height="100" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g fill="none" fill-rule="evenodd">
+            <ellipse cx="64" cy="72" rx="44" ry="34" fill="#fff" stroke="#ffd1e8" stroke-width="2" />
+            <path d="M30 30c8-6 22-12 34-6 18 8 28 2 34-4 2 8 4 20 0 28-6 14-22 40-34 40S34 70 30 56c-4-10-3-20 0-26z" fill="#fff0f6" stroke="#ffbfd6"/>
+            <circle cx="46" cy="64" r="4" fill="#111"/>
+            <circle cx="82" cy="64" r="4" fill="#111"/>
+            <path d="M56 86c4 4 12 4 16 0" stroke="#ff8fb1" stroke-linecap="round" stroke-width="3"/>
+            <circle cx="36" cy="50" r="8" fill="#ff8fb1"/>
+          </g>
+        </svg>
+      </div>
+      <div class="title">
+        <h1>Happy Birthday, Palakshi 🌸</h1>
+        <p class="sub">A tiny page made with lots of love — press the music button and make a wish!</p>
+      </div>
+      <div style="width:96px;text-align:right;opacity:0.95">
+        <div style="font-size:12px;color:#ff5b92;font-weight:800">💕</div>
+        <div style="font-size:11px;color:#999">from Hussain</div>
+      </div>
+    </header>
+
+    <div class="center">
+      <div class="card">
+        <div class="scene" aria-hidden="true">
+          <div class="balloon b1" style="transform-origin:center bottom"></div>
+          <div class="balloon b2"></div>
+          <div class="balloon b3"></div>
+
+          <div class="cake" id="cake">
+            <div class="plate" aria-hidden="true"></div>
+            <div class="tier">
+              <div class="frost"></div>
+              <div style="font-size:14px;color:#ff5b92;font-weight:800">Palakshi</div>
+            </div>
+            <div class="candle c1"><div class="flame"></div></div>
+            <div class="candle c2"><div class="flame"></div></div>
+            <div class="candle c3"><div class="flame"></div></div>
+          </div>
+
+          <div class="floaty">
+            <svg width="140" height="140" viewBox="0 0 24 24" class="heart" style="opacity:0.95">
+              <path d="M12 21s-7-4.35-9-7.1C-0.06 9.17 3.5 4 7.5 6c1.9 1 2.5 3 4.5 3 2 0 2.6-2 4.5-3 4-2 7.56 3.17 4.5 7.9C19 16.65 12 21 12 21z" fill="#ffd1e8"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="btn" id="playBtn">Play music & confetti</button>
+          <button class="btn ghost" id="wishBtn">Make a wish</button>
+          <button class="btn ghost" id="downloadBtn">Save as PNG</button>
+        </div>
+        <div class="foot">Tip: click "Make a wish" and blow out the candles (hold).</div>
+      </div>
+
+      <div style="width:260px;display:flex;flex-direction:column;gap:12px;align-items:center">
+        <div style="width:100%;background:linear-gradient(180deg,#fff,#fff9fb);border-radius:16px;padding:12px;box-shadow:0 8px 16px rgba(200,170,200,0.05);text-align:center">
+          <strong style="color:#ff5b92;font-size:18px">Gifts</strong>
+          <p style="margin:8px 0 0;color:#666">A playlist, lots of hugs, and this page 💌</p>
+        </div>
+
+        <div style="width:100%;padding:12px;border-radius:12px;background:linear-gradient(180deg,#fff6f9,#fff);text-align:center;box-shadow:0 6px 14px rgba(120,90,120,0.04)">
+          <div style="font-weight:800;color:#ff7aa6">Say something nice</div>
+          <textarea id="msg" rows="4" placeholder="Type a short wish for Palakshi" style="width:100%;margin-top:8px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);padding:8px;font-family:inherit"></textarea>
+          <button class="btn" id="sayBtn" style="margin-top:8px">Show wish</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Confetti canvas
+    const canvas = document.getElementById('confetti');
+    const ctx = canvas.getContext('2d');
+    let W, H, confettiPieces = [];
+    function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight}
+    window.addEventListener('resize',resize);resize();
+
+    function rand(min,max){return Math.random()*(max-min)+min}
+    function Confetti(){
+      this.x = rand(0,W);this.y = rand(-H,0);this.r = rand(6,12);this.d = rand(10,30);
+      this.color = ['#ffbfd6','#ffd1e8','#ffd8a6','#b6fff0','#fff6b8'][Math.floor(rand(0,5))];
+      this.tilt = rand(-10,10);this.tiltAngleIncrement = rand(0.05,0.12);
+    }
+    Confetti.prototype.update = function(){this.y += Math.cos(this.d)*1.2 + 1.6; this.tilt += this.tiltAngleIncrement; this.x += Math.sin(this.tilt/10); if(this.y>H+20){this.y=-10;this.x=rand(0,W)}}
+    Confetti.prototype.draw = function(){ctx.beginPath();ctx.fillStyle=this.color;ctx.fillRect(this.x+this.tilt, this.y, this.r, this.r*0.6)}
+
+    for(let i=0;i<120;i++) confettiPieces.push(new Confetti());
+    let confettiActive=false;
+    function loop(){ctx.clearRect(0,0,W,H);if(confettiActive){for(let p of confettiPieces){p.update();p.draw()}}requestAnimationFrame(loop)}
+    loop();
+
+    // Music - gentle melody using WebAudio
+    const audioCtx = new (window.AudioContext||window.webkitAudioContext)();
+    const playBtn = document.getElementById('playBtn');
+    playBtn.addEventListener('click',async ()=>{
+      if(audioCtx.state==='suspended') await audioCtx.resume();
+      playMelody();confettiActive=true; setTimeout(()=>confettiActive=false,7000);
+    });
+
+    function playMelody(){
+      const notes = [523.25,659.25,783.99,523.25,659.25,783.99,880,783.99]; // C5, E5, G5...
+      let t = audioCtx.currentTime;
+      for(let i=0;i<notes.length;i++){
+        const o = audioCtx.createOscillator();
+        const g = audioCtx.createGain();
+        o.type='sine';o.frequency.setValueAtTime(notes[i],t + i*0.28);
+        g.gain.setValueAtTime(0.0001,t + i*0.28);
+        g.gain.exponentialRampToValueAtTime(0.06,t + i*0.28 + 0.02);
+        g.gain.exponentialRampToValueAtTime(0.0001,t + i*0.28 + 0.26);
+        o.connect(g);g.connect(audioCtx.destination);o.start(t + i*0.28);o.stop(t + i*0.28 + 0.28);
+      }
+    }
+
+    // Make a wish - hold to blow out candles (simulated)
+    const wishBtn = document.getElementById('wishBtn');
+    let holdTimer=null; let blown=false;
+    wishBtn.addEventListener('pointerdown',()=>{if(blown) return; wishBtn.textContent='Blowing...'; holdTimer=setTimeout(()=>{blowOut()},1400)});
+    wishBtn.addEventListener('pointerup',()=>{clearTimeout(holdTimer); if(!blown) wishBtn.textContent='Make a wish'});
+    function blowOut(){blown=true; wishBtn.textContent='✨ Wish sent!'; document.querySelectorAll('.flame').forEach(f=>f.style.opacity=0); confettiActive=true; setTimeout(()=>confettiActive=false,8000)}
+
+    // Save as PNG
+    const downloadBtn = document.getElementById('downloadBtn');
+    downloadBtn.addEventListener('click',()=>{
+      // draw the stage element to a canvas
+      const stage = document.querySelector('.stage');
+      const rect = stage.getBoundingClientRect();
+      const out = document.createElement('canvas'); out.width=rect.width; out.height=rect.height;
+      const c = out.getContext('2d');
+      // simple fallback: rasterize background + text using foreignObject is complicated offline, so we take a screenshot of the window canvas + basic shapes
+      c.fillStyle='#fffdf7'; c.fillRect(0,0,out.width,out.height);
+      c.fillStyle='#ff5b92'; c.font='28px Pacifico, sans-serif'; c.fillText('Happy Birthday, Palakshi',18,46);
+      const link = document.createElement('a'); link.download = 'happy-birthday-palakshi.png'; link.href = out.toDataURL('image/png'); link.click();
+    });
+
+    // Show typed wish on the cake area
+    document.getElementById('sayBtn').addEventListener('click',()=>{
+      const txt = document.getElementById('msg').value.trim();
+      if(!txt) return alert('Type a short wish for Palakshi!');
+      const note = document.createElement('div'); note.style.position='absolute'; note.style.bottom='12px'; note.style.left='18px'; note.style.padding='8px 12px'; note.style.background='rgba(255,255,255,0.9)'; note.style.borderRadius='10px'; note.style.boxShadow='0 8px 20px rgba(0,0,0,0.06)'; note.style.color='#ff5b92'; note.style.fontWeight=800; note.textContent = txt; document.querySelector('.card').appendChild(note);
+      setTimeout(()=>note.style.transform='translateY(-10px)',20); setTimeout(()=>note.remove(),7000);
+    });
+
+    // gentle floating hearts animation
+    (function hearts(){
+      const container = document.createElement('div'); container.style.position='absolute'; container.style.left='-6px'; container.style.bottom='6px'; container.style.pointerEvents='none'; document.querySelector('.stage').appendChild(container);
+      setInterval(()=>{
+        const el = document.createElement('div'); el.style.position='absolute'; el.style.left=rand(20,260)+'px'; el.style.bottom='10px'; el.style.opacity=1; el.style.width='18px'; el.style.height='18px';
+        el.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18"><path fill="#ff8fb1" d="M12 21s-7-4.35-9-7.1C-0.06 9.17 3.5 4 7.5 6c1.9 1 2.5 3 4.5 3 2 0 2.6-2 4.5-3 4-2 7.56 3.17 4.5 7.9C19 16.65 12 21 12 21z"/></svg>';
+        container.appendChild(el);
+        let t=0; const id = setInterval(()=>{t+=20; el.style.bottom = 10 + t/10 + 'px'; el.style.opacity = 1 - t/800; if(t>800){clearInterval(id); el.remove()}},20);
+      },900);
+    })();
+
+    // small accessibility: enter key on message
+    document.getElementById('msg').addEventListener('keydown',e=>{if(e.key==='Enter' && !e.shiftKey){e.preventDefault(); document.getElementById('sayBtn').click()}})
+  </script>
+</body>
+</html>
